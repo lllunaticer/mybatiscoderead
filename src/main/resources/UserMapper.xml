@@ -6,7 +6,7 @@
     <select id="queryUserBySchoolName" resultType="com.mybatis.coderead.mybatiscoderead.User">
         SELECT * FROM `user`
         <if test="schoolName != null">
-            WHERE schoolName = ${schoolName}
+            WHERE school_name = #{schoolName}
         </if>
     </select>
 </mapper>
